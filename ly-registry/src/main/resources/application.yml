@@ -1,0 +1,8 @@
+server:
+  port: 6868 #端口号
+eureka:
+  client:
+    register-with-eureka: false  #是否把自己注册到eureka服务中。本身就是服务器 没必要注册自己
+    fetch-registry: false #是否从eureka中获取注册信息。本身就是服务器 没必要注册自己
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka/ #eureka客户端和服务器端交互的地址

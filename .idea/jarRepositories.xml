@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="public" />
+      <option name="name" value="Internal Repository" />
+      <option name="url" value="http://maven.hikvision.com.cn/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="fsdmdept-3rd" />
+      <option name="name" value="fsdmdept-3rd Repository" />
+      <option name="url" value="http://maven.hikvision.com.cn/nexus/content/repositories/fsdmdept-3rd" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss" />
+      <option name="name" value="jboss repository" />
+      <option name="url" value="http://repository.jboss.com/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nexus" />
+      <option name="name" value="Nexus" />
+      <option name="url" value="http://maven.hikvision.com.cn/nexus/content/groups/isms-group/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="fsdmdept-release" />
+      <option name="name" value="fsdmdept release" />
+      <option name="url" value="http://maven.hikvision.com.cn/nexus/content/repositories/fsdmdept-release" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="offical" />
+      <option name="name" value="Maven Offical Repository" />
+      <option name="url" value="http://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="spring-milestones" />
+      <option name="name" value="Spring Milestones" />
+      <option name="url" value="https://repo.spring.io/milestone" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-down" />
+      <option name="name" value="maven-down" />
+      <option name="url" value="http://af.hikvision.com.cn:80/artifactory/maven-down/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="fsdmdept-snapshot" />
+      <option name="name" value="fsdmdept snapshot" />
+      <option name="url" value="http://maven.hikvision.com.cn/nexus/content/repositories/fsdmdept-snapshot" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+  </component>
+</project>
