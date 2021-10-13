@@ -1,0 +1,26 @@
+server:
+  port: 9001
+
+
+spring:
+  application:
+    name: tensquare-common #指定服务名
+  datasource:
+    username: root
+    password: 123456
+    #?serverTimezone=UTC解决时区的报错
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tensquare_base?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+      #    type: com.alibaba.druid.pool.DruidDataSource # 自定义数据源Druid
+      #Spring Boot 默认是不注入这些属性值的，需要自己绑定
+    #druid 数据源专有配置
+
+
+  jpa:
+    database: mysql
+    show-sql: true    #显示SQL语句
+    generate-ddl: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
