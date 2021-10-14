@@ -1,5 +1,5 @@
 server:
-  port: 10011 #端口号
+  port: 8091 #端口号
 eureka:
   client:
     service-url:
@@ -9,3 +9,12 @@ eureka:
 spring:
   application:
     name: ly-item(物品)
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
