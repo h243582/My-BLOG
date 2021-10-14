@@ -1,0 +1,28 @@
+server:
+  port: 9008
+spring:
+  application:
+    name: tensquare-user #指定服务名
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tensquare_user?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+
+    username: root
+    password: 123456
+  jpa:
+    database: MySQL
+    show-sql: true
+
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+
+  redis:
+    host: localhost
+
+  rabbitmq:
+    host: localhost
+jwt:
+  config:
+    key: heyufei
+    ttl: 360000

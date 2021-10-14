@@ -1,11 +1,11 @@
 server:
   port: 8091 #端口号
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:6868/eureka/ #eureka客户端和服务器端交互的地址,6868是eureka服务的地址
-  instance:
-    prefer-ip-address: true  #能否跨服务器访问（就是说访问另一个服务）
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:6868/eureka/ #eureka客户端和服务器端交互的地址,6868是eureka服务的地址
+#  instance:
+#    prefer-ip-address: true  #能否跨服务器访问（就是说访问另一个服务）
 spring:
   application:
     name: ly-item(物品)

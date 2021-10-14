@@ -9,6 +9,17 @@
         <module>ly-user</module>
         <module>ly-item</module>
         <module>ly-registry</module>
+
+<!--        <module>tensquare_common</module>-->
+<!--        <module>tensquare_base</module>-->
+<!--        <module>tensquare_recruit</module>-->
+<!--        <module>tensquare_qa</module>-->
+<!--        <module>tensquare_article</module>-->
+<!--        <module>tensquare_gathering</module>-->
+<!--        <module>tensquare_spit</module>-->
+<!--        <module>tensquare_search</module>-->
+<!--        <module>tensquare_user</module>-->
+<!--        <module>tensquare_sms</module>-->
     </modules>
 
     <parent>
@@ -43,13 +54,24 @@
     </dependencyManagement>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+<!--            <version>2.0.0.RELEASE</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-            <version>2.0.0.RELEASE</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
+
+
 
 
     <repositories>
@@ -61,7 +83,35 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+
+<!--        <repository>-->
+<!--            <id>spring-snapshots</id>-->
+<!--            <name>Spring Snapshots</name>-->
+<!--            <url>https://repo.spring.io/snapshot</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
     </repositories>
 
+
+<!--    <pluginRepositories>-->
+<!--        <pluginRepository>-->
+<!--            <id>spring-snapshots</id>-->
+<!--            <name>Spring Snapshots</name>-->
+<!--            <url>https://repo.spring.io/snapshot</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </pluginRepository>-->
+<!--        <pluginRepository>-->
+<!--            <id>spring-milestones</id>-->
+<!--            <name>Spring Milestones</name>-->
+<!--            <url>https://repo.spring.io/milestone</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>false</enabled>-->
+<!--            </snapshots>-->
+<!--        </pluginRepository>-->
+<!--    </pluginRepositories>-->
 
 </project>
