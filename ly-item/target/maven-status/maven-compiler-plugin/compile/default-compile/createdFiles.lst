@@ -1,6 +1,1 @@
-com\hyf\controller\BrandController.class
 com\hyf\ItemApplication.class
-com\hyf\service\BrandServiceImpl.class
-com\hyf\dao\BrandMapper.class
-com\hyf\pojo\Brand.class
-com\hyf\service\BrandService.class
