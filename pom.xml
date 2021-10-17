@@ -56,6 +56,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
+            <!--  客户端 -->
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>

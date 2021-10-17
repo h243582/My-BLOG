@@ -21,6 +21,7 @@ public class Brand2Service {
     }
 
     public void addBrand(Brand brand) {
+
         brandDao.save(brand);
     }
 

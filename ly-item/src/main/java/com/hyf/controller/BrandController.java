@@ -2,7 +2,6 @@ package com.hyf.controller;
 
 import com.hyf.pojo.Brand;
 import com.hyf.service.Brand2Service;
-import com.hyf.service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,8 +10,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/brand")
 public class BrandController {
+
     @Autowired
     private Brand2Service brandService;
+
 
     @GetMapping
     public List<Brand> query1(){
@@ -25,13 +26,17 @@ public class BrandController {
     }
 
     @PostMapping
-    public void addBrand(Brand brand) {
+    public String addBrand(@RequestBody Brand brand) {
+
         brandService.addBrand(brand);
+
+        return "添加了";
     }
 
     @PutMapping
-    public void updateBrand(Brand brand) {
+    public String updateBrand(@RequestBody Brand brand) {
         brandService.updateBrand(brand);
+        return "修改了";
     }
 
     @DeleteMapping("/{id}")

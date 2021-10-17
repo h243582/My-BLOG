@@ -9,12 +9,12 @@ eureka:
 spring:
   application:
     name: ly-item(物品)
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://localhost:3306/mydb?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
-#    username: root
-#    password: 123456
-#  jpa:
-#    database: mysql
-#    generate-ddl: true
-#    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true

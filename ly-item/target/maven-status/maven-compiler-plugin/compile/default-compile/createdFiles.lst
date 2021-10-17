@@ -1,1 +1,8 @@
+com\hyf\controller\BrandController.class
 com\hyf\ItemApplication.class
+com\hyf\controller\cnter.class
+com\hyf\dao\BrandDao.class
+com\hyf\service\BrandServiceImpl.class
+com\hyf\service\Brand2Service.class
+com\hyf\pojo\Brand.class
+com\hyf\service\BrandService.class
