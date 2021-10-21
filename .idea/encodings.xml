@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/hyf_Register/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hyf_Register/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyf_base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hyf_friend/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyf_question/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hyf_user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hyf_user/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyf_utils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ly-Items/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ly-registry/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ly-registry/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ly-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tensquare_article/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tensquare_article/src/main/resources" charset="UTF-8" />
@@ -16,7 +19,5 @@
     <file url="file://$PROJECT_DIR$/tensquare_search/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tensquare_sms/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tensquare_spit/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tensquare_user/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tensquare_user/src/main/resources" charset="UTF-8" />
   </component>
 </project>

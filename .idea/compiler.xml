@@ -7,26 +7,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hyf_friend" />
         <module name="ly-Items" />
-        <module name="ly-user" />
-        <module name="ly-registry" />
-        <module name="ly-items" />
         <module name="hyf_base" />
+        <module name="hyf_user" />
         <module name="hyf_utils" />
         <module name="hyf_question" />
+        <module name="hyf_Register" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="hyf_base" target="8" />
+      <module name="hyf_friend" target="8" />
       <module name="hyf_question" target="8" />
+      <module name="hyf_Register" target="8" />
+      <module name="hyf_user" target="1.8" />
       <module name="hyf_utils" target="8" />
       <module name="ly-cart" target="8" />
       <module name="ly-item" target="8" />
       <module name="ly-Items" target="8" />
       <module name="ly-items" target="8" />
-      <module name="ly-registry" target="8" />
       <module name="ly-user" target="8" />
-      <module name="SpringCloud-Study" target="1.8" />
+      <module name="My_BLOG" target="1.8" />
       <module name="tensquare_article" target="8" />
       <module name="tensquare_base" target="8" />
       <module name="tensquare_common" target="8" />
@@ -36,19 +38,20 @@
       <module name="tensquare_search" target="8" />
       <module name="tensquare_sms" target="8" />
       <module name="tensquare_spit" target="8" />
-      <module name="tensquare_user" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hyf_Register" options="-parameters" />
       <module name="hyf_base" options="-parameters" />
+      <module name="hyf_friend" options="-parameters" />
       <module name="hyf_question" options="-parameters" />
+      <module name="hyf_user" options="-parameters" />
       <module name="hyf_utils" options="-parameters" />
       <module name="ly-Items" options="-parameters" />
       <module name="ly-cart" options="-parameters" />
       <module name="ly-item" options="-parameters" />
       <module name="ly-items" options="-parameters" />
-      <module name="ly-registry" options="-parameters" />
       <module name="ly-user" options="-parameters" />
       <module name="tensquare_article" options="-parameters" />
       <module name="tensquare_base" options="-parameters" />
@@ -59,7 +62,6 @@
       <module name="tensquare_search" options="-parameters" />
       <module name="tensquare_sms" options="-parameters" />
       <module name="tensquare_spit" options="-parameters" />
-      <module name="tensquare_user" options="-parameters" />
     </option>
   </component>
 </project>

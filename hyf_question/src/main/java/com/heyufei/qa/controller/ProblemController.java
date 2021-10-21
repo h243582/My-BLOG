@@ -1,6 +1,7 @@
 package com.heyufei.qa.controller;
 import java.util.Map;
 
+import com.heyufei.qa.client.LabelClient;
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -35,7 +36,19 @@ public class ProblemController {
 
 	@Autowired
 	private HttpServletRequest request;
-	
+
+	@Autowired
+	private LabelClient labelClient;
+
+	/**
+	 * 使用外部模块，查询label指定标签
+	 */
+	@RequestMapping(value = "/label/{labelId}")
+	public Result findLabelById(@PathVariable String labelId){
+		return labelClient.findById(labelId);
+	}
+
+
 	/**
 	 * 查询全部数据
 	 * @return

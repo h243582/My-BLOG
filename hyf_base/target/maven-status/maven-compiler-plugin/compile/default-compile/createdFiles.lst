@@ -2,7 +2,6 @@ come\heyufei\service\LabelService$1.class
 come\heyufei\controller\BaseExceptionHandler.class
 come\heyufei\controller\LabelController.class
 come\heyufei\service\LabelService.class
-come\heyufei\Contrl.class
 come\heyufei\dao\LabelDao.class
 come\heyufei\pojo\Label.class
 come\heyufei\BaseApplication.class

@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloud-Study.iml" filepath="$PROJECT_DIR$/.idea/SpringCloud-Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/My_BLOG.iml" filepath="$PROJECT_DIR$/.idea/My_BLOG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyf_Register/hyf_Register.iml" filepath="$PROJECT_DIR$/hyf_Register/hyf_Register.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_base/hyf_base.iml" filepath="$PROJECT_DIR$/hyf_base/hyf_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyf_friend/hyf_friend.iml" filepath="$PROJECT_DIR$/hyf_friend/hyf_friend.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_question/hyf_question.iml" filepath="$PROJECT_DIR$/hyf_question/hyf_question.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tensquare_user/hyf_user.iml" filepath="$PROJECT_DIR$/tensquare_user/hyf_user.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_utils/hyf_utils.iml" filepath="$PROJECT_DIR$/hyf_utils/hyf_utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled1/ly-Items.iml" filepath="$PROJECT_DIR$/untitled1/ly-Items.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ly-Items/ly-items.iml" filepath="$PROJECT_DIR$/ly-Items/ly-items.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ly-registry/ly-registry.iml" filepath="$PROJECT_DIR$/ly-registry/ly-registry.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ly-user/ly-user.iml" filepath="$PROJECT_DIR$/ly-user/ly-user.iml" />
     </modules>
   </component>
 </project>
