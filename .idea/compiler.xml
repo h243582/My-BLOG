@@ -7,15 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ly-Items" />
+        <module name="ly-user" />
         <module name="ly-registry" />
         <module name="ly-items" />
-        <module name="ly-Items" />
+        <module name="hyf_base" />
         <module name="hyf_utils" />
         <module name="hyf_question" />
-        <module name="ly-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="hyf_base" target="8" />
       <module name="hyf_question" target="8" />
       <module name="hyf_utils" target="8" />
       <module name="ly-cart" target="8" />
@@ -39,6 +41,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hyf_base" options="-parameters" />
       <module name="hyf_question" options="-parameters" />
       <module name="hyf_utils" options="-parameters" />
       <module name="ly-Items" options="-parameters" />

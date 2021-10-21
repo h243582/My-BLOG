@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tensquare_base</artifactId>
+    <artifactId>hyf_base</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -29,7 +29,7 @@
         <dependency>
             <!--引入通用模块-->
             <groupId>com.heyufei</groupId>
-            <artifactId>tensquare_common</artifactId>
+            <artifactId>hyf_utils</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

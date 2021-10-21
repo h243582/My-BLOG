@@ -24,15 +24,16 @@
     </properties>
 
     <modules>
-<!--        <module>ly-cart</module>-->
         <module>ly-user</module>
         <module>ly-items</module>
         <module>ly-registry</module>
+
+        <module>hyf_base</module>
+
         <module>hyf_question</module>
         <module>hyf_utils</module>
 
         <!--        <module>tensquare_common</module>-->
-<!--        <module>tensquare_base</module>-->
 <!--        <module>tensquare_recruit</module>-->
 <!--        <module>tensquare_qa</module>-->
 <!--        <module>untitled1</module>-->
