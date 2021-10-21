@@ -4,10 +4,9 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.heyufei</groupId>
         <artifactId>tensquare_parent</artifactId>
+        <groupId>com.heyufei</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath />
     </parent>
 
     <artifactId>tensquare_recruit</artifactId>

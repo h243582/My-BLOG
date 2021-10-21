@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringCloud-Study.iml" filepath="$PROJECT_DIR$/.idea/SpringCloud-Study.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ly-cart/ly-cart.iml" filepath="$PROJECT_DIR$/ly-cart/ly-cart.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ly-item/ly-item.iml" filepath="$PROJECT_DIR$/ly-item/ly-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyf_question/hyf_question.iml" filepath="$PROJECT_DIR$/hyf_question/hyf_question.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyf_utils/hyf_utils.iml" filepath="$PROJECT_DIR$/hyf_utils/hyf_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled1/ly-Items.iml" filepath="$PROJECT_DIR$/untitled1/ly-Items.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-Items/ly-items.iml" filepath="$PROJECT_DIR$/ly-Items/ly-items.iml" />
       <module fileurl="file://$PROJECT_DIR$/ly-registry/ly-registry.iml" filepath="$PROJECT_DIR$/ly-registry/ly-registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/ly-user/ly-user.iml" filepath="$PROJECT_DIR$/ly-user/ly-user.iml" />
     </modules>
