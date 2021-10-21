@@ -1,0 +1,5 @@
+com\heyufei\friend\ApplicationConfig.class
+com\heyufei\friend\filter\JwtFilter.class
+com\heyufei\friend\pojo\Friend.class
+com\heyufei\friend\FriendApplication.class
+com\heyufei\friend\controller\FriendController.class
