@@ -20,6 +20,10 @@ public class JwtFilter extends HandlerInterceptorAdapter {
         if (authHeader != null && authHeader.startsWith("Bearer")) {
             final String token = authHeader.substring(7); // The partafter "Bearer "
             Claims claims = jwtUtil.parseJWT(token);
+            System.out.println("id:"+claims.getId());
+            System.out.println("subject:"+claims.getSubject());
+            System.out.println("IssuedAt:"+claims.getIssuedAt());
+
             if (claims != null) {
                 if("admin".equals(claims.get("roles"))){//如果是管理员
                     request.setAttribute("admin_claims", claims);

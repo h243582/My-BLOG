@@ -113,45 +113,10 @@ public class AdminService {
 		adminDao.deleteById(id);
 	}
 
-	/**
-	 * 动态条件构建
-	 * @param searchMap
-	 * @return
-	 */
-	private Specification<Admin> createSpecification(Map searchMap) {
-
-		return new Specification<Admin>() {
-
-			@Override
-			public Predicate toPredicate(Root<Admin> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
-				List<Predicate> predicateList = new ArrayList<Predicate>();
-                // ID
-                if (searchMap.get("id")!=null && !"".equals(searchMap.get("id"))) {
-                	predicateList.add(cb.like(root.get("id").as(String.class), "%"+(String)searchMap.get("id")+"%"));
-                }
-                // 登陆名称
-                if (searchMap.get("loginname")!=null && !"".equals(searchMap.get("loginname"))) {
-                	predicateList.add(cb.like(root.get("loginname").as(String.class), "%"+(String)searchMap.get("loginname")+"%"));
-                }
-                // 密码
-                if (searchMap.get("password")!=null && !"".equals(searchMap.get("password"))) {
-                	predicateList.add(cb.like(root.get("password").as(String.class), "%"+(String)searchMap.get("password")+"%"));
-                }
-                // 状态
-                if (searchMap.get("state")!=null && !"".equals(searchMap.get("state"))) {
-                	predicateList.add(cb.like(root.get("state").as(String.class), "%"+(String)searchMap.get("state")+"%"));
-                }
-				
-				return cb.and( predicateList.toArray(new Predicate[predicateList.size()]));
-
-			}
-		};
-
-	}
 
 
 	/**
-	 * 根据登陆名和密码查询
+	 * 登录
 	 */
 	public Admin findByLoginnameAndPassword(String loginname, String password){
 		Admin admin = adminDao.findByLoginname(loginname);
@@ -160,6 +125,40 @@ public class AdminService {
 		}else{
 			return null;
 		}
+	}
+
+	/**
+	 * 动态条件构建
+	 */
+	private Specification<Admin> createSpecification(Map searchMap) {
+
+		return new Specification<Admin>() {
+
+			@Override
+			public Predicate toPredicate(Root<Admin> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+				List<Predicate> predicateList = new ArrayList<Predicate>();
+				// ID
+				if (searchMap.get("id")!=null && !"".equals(searchMap.get("id"))) {
+					predicateList.add(cb.like(root.get("id").as(String.class), "%"+(String)searchMap.get("id")+"%"));
+				}
+				// 登陆名称
+				if (searchMap.get("loginname")!=null && !"".equals(searchMap.get("loginname"))) {
+					predicateList.add(cb.like(root.get("loginname").as(String.class), "%"+(String)searchMap.get("loginname")+"%"));
+				}
+				// 密码
+				if (searchMap.get("password")!=null && !"".equals(searchMap.get("password"))) {
+					predicateList.add(cb.like(root.get("password").as(String.class), "%"+(String)searchMap.get("password")+"%"));
+				}
+				// 状态
+				if (searchMap.get("state")!=null && !"".equals(searchMap.get("state"))) {
+					predicateList.add(cb.like(root.get("state").as(String.class), "%"+(String)searchMap.get("state")+"%"));
+				}
+
+				return cb.and( predicateList.toArray(new Predicate[predicateList.size()]));
+
+			}
+		};
+
 	}
 
 }

@@ -152,8 +152,7 @@ public class UserController {
 	 */
 	@RequestMapping(value="/login",method=RequestMethod.POST)
 	public Result login(@RequestBody Map<String,String> loginMap){
-		User user =
-				userService.findByMobileAndPassword(loginMap.get("mobile"),loginMap.get("password"));
+		User user = userService.findByMobileAndPassword(loginMap.get("mobile"),loginMap.get("password"));
 		if(user!=null){
 			String token = jwtUtil.createJWT(user.getId(),user.getNickname(), "user");
 			Map map=new HashMap();

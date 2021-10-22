@@ -31,4 +31,4 @@ spring:
 jwt:
   config:
     key: heyufei
-    ttl: 360000
+    ttl: 360000000000
