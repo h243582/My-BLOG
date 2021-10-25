@@ -20,11 +20,10 @@ public class Friend implements Serializable {
     @Id
     private String userid;
 
-    @Id
     private String friendid;
 
 
-    private String islike;
+    private Integer islike;
 
 
 

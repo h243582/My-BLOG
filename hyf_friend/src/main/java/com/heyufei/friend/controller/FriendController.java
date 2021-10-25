@@ -21,24 +21,40 @@ public class FriendController {
     private HttpServletRequest request;
     /**
      * 添加好友
-     * @param friendid 对方用户ID
-     * @param type 1：喜欢 0：不喜欢
+     * @param friendUserId 对方用户ID
+     * @param LikeType 1：喜欢 0：不喜欢
      * @return
      */
-    @RequestMapping(value="/like/{friendid}/{type}",method= RequestMethod.PUT)
-    public Result addFriend(@PathVariable String friendid , @PathVariable String type){
+    @RequestMapping(value= "/like/{friendUserId}/{LikeType}",method= RequestMethod.PUT)
+    public Result addFriend(@PathVariable String friendUserId, @PathVariable String LikeType){
         Claims claims=(Claims)request.getAttribute("user_claims");
         if(claims==null){
             return new Result(false, StatusCode.ACCESSERROR,"无权访问");
         }
         //如果是喜欢
-        if(type.equals("1")){
-            if(friendService.addFriend(claims.getId(),friendid)==0){
-                return new Result(false, StatusCode.REPERROR,"已经添加此好友");
+        if(LikeType.equals("1")){
+            if(friendService.addFriend(claims.getId(), friendUserId)==0){
+                return new Result(false, StatusCode.REPERROR,"已经添加过这个好友了");
             }
         }else{
             //不喜欢
+            friendService.addNoFriend(claims.getId(), friendUserId);//向不喜欢列表中添加记录
         }
-        return new Result(true, StatusCode.OK, "操作成功");
+        return new Result(true, StatusCode.OK, "添加成功",claims.getId());
+    }
+
+    /**
+     * 删除好友
+     * @param friendid
+     * @return
+     */
+    @RequestMapping(value="/{friendid}",method=RequestMethod.DELETE)
+    public Result remove(@PathVariable String friendid){
+        Claims claims=(Claims)request.getAttribute("user_claims");
+        if(claims==null){
+            return new Result(false, StatusCode.ACCESSERROR,"无权访问");
+        }
+        friendService.deleteFriend(claims.getId(), friendid);
+        return new Result(true, StatusCode.OK, "删除成功");
     }
 }

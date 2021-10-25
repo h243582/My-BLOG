@@ -1,20 +1,11 @@
-/*
- Navicat Premium Data Transfer
+# CREATE DATABASE /*!32312 IF NOT EXISTS*/`tensquare_user` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
- Source Server         : MySQL
- Source Server Type    : MySQL
- Source Server Version : 80021
- Source Host           : localhost:3306
- Source Schema         : tensquare_user
+USE `tensquare_user`;
 
- Target Server Type    : MySQL
- Target Server Version : 80021
- File Encoding         : 65001
-
- Date: 21/10/2021 23:57:07
-*/
 
 SET NAMES utf8mb4;
+
+
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
