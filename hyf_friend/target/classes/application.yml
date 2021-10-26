@@ -12,7 +12,7 @@ spring:
     name: hyf-friend  #服务名
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://120.24.145.157:3306/tensquare_friend?characterEncodeing=UTF-8&useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT&allowMultiQueries=true
+    url: jdbc:mysql://120.24.145.157:3306/hyf_friend?characterEncodeing=UTF-8&useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT&allowMultiQueries=true
     username: root
     password: Jsu123456.
   jpa:

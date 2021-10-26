@@ -1,6 +1,6 @@
-# CREATE DATABASE /*!32312 IF NOT EXISTS*/`tensquare_user` /*!40100 DEFAULT CHARACTER SET utf8 */;
+# CREATE DATABASE /*!32312 IF NOT EXISTS*/`hyf_user` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `tensquare_user`;
+USE `hyf_user`;
 
 
 SET NAMES utf8mb4;

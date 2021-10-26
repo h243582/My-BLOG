@@ -11,10 +11,10 @@ spring:
   application:
     name: hyf-base  #(基础) #指定服务名
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/tensquare_base?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.24.145.157:3306/hyf_base?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
-    password: 123456
+    password: Jsu123456.
   jpa:
     database: MySQL
     show-sql: true
@@ -22,3 +22,4 @@ spring:
 jwt:
   config:
     key: heyufei
+    ttl: 360000000000

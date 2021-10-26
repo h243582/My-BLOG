@@ -1,5 +1,6 @@
 package com.heyufei.friend.service;
 
+import com.heyufei.friend.client.UserClient;
 import com.heyufei.friend.dao.FriendDao;
 import com.heyufei.friend.dao.NoFriendDao;
 import com.heyufei.friend.pojo.Friend;
@@ -17,6 +18,9 @@ public class FriendService {
     @Autowired
     private NoFriendDao noFriendDao;
 
+    @Autowired
+    private UserClient userClient;
+
 
     @Transactional //要么方法全部执行成功，所有sql语句全部正确执行，要么全部不做
     public int addFriend(String userid,String friendid){
@@ -30,7 +34,9 @@ public class FriendService {
         //向喜欢表中添加记录
         Friend friend=new Friend(userid, friendid,0);
         friendDao.save(friend);
-//        friendDao.addFriend(userid, friendid,0);
+        userClient.attention(userid,1);//增加自己的关注数
+        userClient.fans(friendid,1);//增加对方的粉丝数
+
 
         //判断对方是否喜欢你，如果喜欢，将islike设置为1
         if(friendDao.selectCount( friendid,userid)>0){
@@ -62,6 +68,13 @@ public class FriendService {
         friendDao.deleteFriend(userid,friendid);
         friendDao.updateLike(0,friendid,userid);
         addNoFriend(userid,friendid);//向不喜欢表中添加记录
+
+        userClient.attention(userid,-1);//减少自己的关注数
+        userClient.fans(friendid,-1);//减少对方的粉丝数
     }
+
+
+
+
 }
 

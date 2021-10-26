@@ -1,0 +1,28 @@
+server: 
+  port: 9002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/ #eureka客户端和服务器端交互的地址,6868是eureka服务的地址
+  instance:
+    prefer-ip-address: true  #能否跨服务器访问（就是说访问另一个服务）
+
+spring: 
+  application:  
+    name: hyf-recruit #指定服务名
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    url: jdbc:mysql://120.24.145.157:3306/hyf_recruit?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+
+    username: root
+    password: Jsu123456.
+  jpa:
+    database: MySQL
+    show-sql: true
+
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true

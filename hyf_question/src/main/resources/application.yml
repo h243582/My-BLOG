@@ -12,7 +12,7 @@ spring:
     name: hyf-question #指定服务名
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://120.24.145.157:3306/tensquare_qa?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    url: jdbc:mysql://120.24.145.157:3306/hyf_question?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
 
     username: root
     password: Jsu123456.
@@ -24,14 +24,3 @@ jwt:
   config:
     key: heyufei
     ttl: 360000000000
-
-logging:
-  level:
-    org.springframework.security:
-      - debug
-      - info
-    org.springframework.web: error
-    org.hibernate.SQL: debug
-    org.hibernate.engine.QueryParameters: debug
-    org.hibernate.engine.query.HQLQueryPlan: debug
-    org.hibernate.type.descriptor.sql.BasicBinder: trace

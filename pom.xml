@@ -13,7 +13,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.4.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
 
     </parent>
 
@@ -23,29 +23,21 @@
     </properties>
 
     <modules>
-<!--        <module>ly-user</module>-->
-<!--        <module>ly-items</module>-->
         <module>hyf_Register</module>
 
         <module>hyf_base</module>
-
         <module>hyf_question</module>
         <module>hyf_utils</module>
         <module>hyf_friend</module>
         <module>hyf_user</module>
+        <module>hyf_article</module>
+        <module>hyf_search</module>
+        <module>hyf_gathering</module>
+        <module>hyf_recruit</module>
+        <module>hyf_spit</module>
 
 
-        <!--        <module>tensquare_common</module>-->
-<!--        <module>tensquare_recruit</module>-->
-<!--        <module>tensquare_qa</module>-->
-<!--        <module>untitled1</module>-->
-        <!--        <module>tensquare_article</module>-->
-<!--        <module>tensquare_gathering</module>-->
-<!--        <module>tensquare_spit</module>-->
-<!--        <module>tensquare_search</module>-->
-<!--        <module>tensquare_sms</module>-->
     </modules>
-
 
 
     <dependencyManagement>
@@ -78,10 +70,19 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <dependency>
+            <!--swagger-->
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <!--swagger-->
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
     </dependencies>
-
-
-
 
 
     <repositories>

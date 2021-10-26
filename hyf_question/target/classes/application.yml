@@ -11,14 +11,14 @@ spring:
   application:
     name: hyf-question #指定服务名
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://120.24.145.157:3306/tensquare_qa?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.24.145.157:3306/hyf_question?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
 
     username: root
     password: Jsu123456.
   jpa:
     database: MySQL
-    show-sql: true
+#    show-sql: true
 
 jwt:
   config:
