@@ -35,7 +35,7 @@
         <module>hyf_gathering</module>
         <module>hyf_recruit</module>
         <module>hyf_spit</module>
-
+        <module>hyf_sms</module>
 
     </modules>
 

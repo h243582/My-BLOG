@@ -9,16 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hyf_gathering" />
         <module name="hyf_search" />
+        <module name="hyf_sms" />
+        <module name="hyf_article" />
+        <module name="hyf_Register" />
+        <module name="hyf_recruit" />
         <module name="hyf_friend" />
         <module name="ly-Items" />
-        <module name="hyf_article" />
         <module name="hyf_base" />
         <module name="hyf_user" />
         <module name="hyf_spit" />
         <module name="hyf_utils" />
         <module name="hyf_question" />
-        <module name="hyf_Register" />
-        <module name="hyf_recruit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -30,6 +31,7 @@
       <module name="hyf_recruit" target="1.8" />
       <module name="hyf_Register" target="8" />
       <module name="hyf_search" target="8" />
+      <module name="hyf_sms" target="8" />
       <module name="hyf_spit" target="8" />
       <module name="hyf_user" target="1.8" />
       <module name="hyf_utils" target="8" />
@@ -60,6 +62,7 @@
       <module name="hyf_question" options="-parameters" />
       <module name="hyf_recruit" options="-parameters" />
       <module name="hyf_search" options="-parameters" />
+      <module name="hyf_sms" options="-parameters" />
       <module name="hyf_spit" options="-parameters" />
       <module name="hyf_user" options="-parameters" />
       <module name="hyf_utils" options="-parameters" />
