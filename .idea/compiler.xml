@@ -10,22 +10,33 @@
         <module name="hyf_gathering" />
         <module name="hyf_search" />
         <module name="hyf_sms" />
-        <module name="hyf_web" />
+        <module name="heyufei_config" />
         <module name="hyf_article" />
+        <module name="heyufei_web" />
         <module name="wwwwwww" />
-        <module name="hyf_Register" />
         <module name="hyf_recruit" />
         <module name="hyf_friend" />
         <module name="ly-Items" />
+        <module name="heyufei_Register" />
         <module name="hyf_base" />
         <module name="hyf_user" />
         <module name="hyf_spit" />
+        <module name="heyufei_manager" />
         <module name="hyf_utils" />
         <module name="hyf_question" />
+      </profile>
+      <profile name="Annotation profile for My_BLOG" enabled="true">
+        <sourceOutputDir name="../hyf_manager/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../hyf_manager/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="hyf_manager" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="heyufei_config" target="8" />
+      <module name="heyufei_manager" target="8" />
+      <module name="heyufei_Register" target="8" />
+      <module name="heyufei_web" target="8" />
       <module name="hyf_article" target="1.8" />
       <module name="hyf_base" target="8" />
       <module name="hyf_friend" target="8" />
@@ -33,13 +44,11 @@
       <module name="hyf_manager" target="8" />
       <module name="hyf_question" target="8" />
       <module name="hyf_recruit" target="1.8" />
-      <module name="hyf_Register" target="8" />
       <module name="hyf_search" target="8" />
       <module name="hyf_sms" target="8" />
       <module name="hyf_spit" target="8" />
       <module name="hyf_user" target="1.8" />
       <module name="hyf_utils" target="8" />
-      <module name="hyf_web" target="8" />
       <module name="ly-cart" target="8" />
       <module name="ly-item" target="8" />
       <module name="ly-items" target="8" />
@@ -60,7 +69,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="hyf_Register" options="-parameters" />
+      <module name="heyufei_Register" options="-parameters" />
+      <module name="heyufei_config" options="-parameters" />
+      <module name="heyufei_manager" options="-parameters" />
+      <module name="heyufei_web" options="-parameters" />
       <module name="hyf_article" options="-parameters" />
       <module name="hyf_base" options="-parameters" />
       <module name="hyf_friend" options="-parameters" />
@@ -73,7 +85,6 @@
       <module name="hyf_spit" options="-parameters" />
       <module name="hyf_user" options="-parameters" />
       <module name="hyf_utils" options="-parameters" />
-      <module name="hyf_web" options="-parameters" />
       <module name="ly-Items" options="-parameters" />
       <module name="ly-cart" options="-parameters" />
       <module name="ly-item" options="-parameters" />

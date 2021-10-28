@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/My_BLOG.iml" filepath="$PROJECT_DIR$/.idea/My_BLOG.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hyf_Register/hyf_Register.iml" filepath="$PROJECT_DIR$/hyf_Register/hyf_Register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyf_Register/heyufei_Register.iml" filepath="$PROJECT_DIR$/hyf_Register/heyufei_Register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heyufei_config/heyufei_config.iml" filepath="$PROJECT_DIR$/heyufei_config/heyufei_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heyufei_manager/heyufei_manager.iml" filepath="$PROJECT_DIR$/heyufei_manager/heyufei_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyf_web/heyufei_web.iml" filepath="$PROJECT_DIR$/hyf_web/heyufei_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_article/hyf_article.iml" filepath="$PROJECT_DIR$/hyf_article/hyf_article.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_base/hyf_base.iml" filepath="$PROJECT_DIR$/hyf_base/hyf_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_friend/hyf_friend.iml" filepath="$PROJECT_DIR$/hyf_friend/hyf_friend.iml" />
@@ -16,7 +19,6 @@
       <module fileurl="file://$PROJECT_DIR$/hyf_spit/hyf_spit.iml" filepath="$PROJECT_DIR$/hyf_spit/hyf_spit.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_user/hyf_user.iml" filepath="$PROJECT_DIR$/hyf_user/hyf_user.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_utils/hyf_utils.iml" filepath="$PROJECT_DIR$/hyf_utils/hyf_utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hyf_web/hyf_web.iml" filepath="$PROJECT_DIR$/hyf_web/hyf_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled1/ly-Items.iml" filepath="$PROJECT_DIR$/untitled1/ly-Items.iml" />
       <module fileurl="file://$PROJECT_DIR$/wwwwwww/wwwwwww.iml" filepath="$PROJECT_DIR$/wwwwwww/wwwwwww.iml" />
     </modules>

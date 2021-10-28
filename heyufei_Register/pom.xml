@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hyf_Register</artifactId>
+    <artifactId>heyufei_Register</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

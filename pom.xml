@@ -23,7 +23,6 @@
     </properties>
 
     <modules>
-        <module>hyf_Register</module>
 
         <module>hyf_article</module>
         <module>hyf_base</module>
@@ -36,8 +35,11 @@
         <module>hyf_recruit</module>
         <module>hyf_spit</module>
         <module>hyf_sms</module>
-        <module>hyf_manager</module>
-        <module>hyf_web</module>
+
+        <module>heyufei_Register</module>
+        <module>heyufei_manager</module>
+        <module>heyufei_web</module>
+        <module>heyufei_config</module>
 
     </modules>
 

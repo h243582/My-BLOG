@@ -2,7 +2,7 @@ server:
   port: 9019
 spring:
   application:
-    name: hyf-web #指定服务名
+    name: heufei-web #指定服务名
 eureka:
   client:
     service-url: #指定Eureka客户端与Eureka服务端进行交互的地址
