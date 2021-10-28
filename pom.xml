@@ -25,17 +25,18 @@
     <modules>
         <module>hyf_Register</module>
 
+        <module>hyf_article</module>
         <module>hyf_base</module>
         <module>hyf_question</module>
         <module>hyf_utils</module>
         <module>hyf_friend</module>
         <module>hyf_user</module>
-        <module>hyf_article</module>
         <module>hyf_search</module>
         <module>hyf_gathering</module>
         <module>hyf_recruit</module>
         <module>hyf_spit</module>
         <module>hyf_sms</module>
+        <module>hyf_manager</module>
 
     </modules>
 

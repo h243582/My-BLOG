@@ -18,6 +18,7 @@ import com.heyufei.qa.service.ProblemService;
 import entity.PageResult;
 import entity.Result;
 import entity.StatusCode;
+import util.JwtUtil;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -39,6 +40,8 @@ public class ProblemController {
 
 	@Autowired
 	private LabelClient labelClient;
+
+
 
 	/**
 	 * 使用外部模块，查询label指定标签

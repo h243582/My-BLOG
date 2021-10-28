@@ -24,5 +24,6 @@ spring:
         globally_quoted_identifiers: true
 
   redis:
-    host: localhost
+    host: 120.24.145.157
+    password: Jsu123456.
     port: 6379

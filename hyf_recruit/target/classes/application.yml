@@ -13,8 +13,6 @@ spring:
     name: hyf-recruit #指定服务名
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-
     url: jdbc:mysql://120.24.145.157:3306/hyf_recruit?useSSl=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
 
     username: root

@@ -20,6 +20,10 @@ spring:
     database: MySQL
 #    show-sql: true
 
+feign:
+  hystrix:
+    enabled: true
+
 jwt:
   config:
     key: heyufei

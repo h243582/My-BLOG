@@ -6,6 +6,7 @@ import com.heyufei.friend.dao.NoFriendDao;
 import com.heyufei.friend.pojo.Friend;
 import com.heyufei.friend.pojo.NoFriend;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -18,6 +19,7 @@ public class FriendService {
     @Autowired
     private NoFriendDao noFriendDao;
 
+    @Qualifier("com.heyufei.friend.client.UserClient")
     @Autowired
     private UserClient userClient;
 
@@ -34,6 +36,7 @@ public class FriendService {
         //向喜欢表中添加记录
         Friend friend=new Friend(userid, friendid,0);
         friendDao.save(friend);
+
         userClient.attention(userid,1);//增加自己的关注数
         userClient.fans(friendid,1);//增加对方的粉丝数
 

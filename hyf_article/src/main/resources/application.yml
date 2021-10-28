@@ -21,17 +21,17 @@ spring:
     database: MySQL
     show-sql: true
 
-    properties:
-      hibernate:
-        globally_quoted_identifiers: true
-
   redis:
-    host: localhost
+    host: 120.24.145.157
+    password: Jsu123456.
     port: 6379
   data:
     mongodb:
-      host: localhost
-      database: spit
+      host: 120.24.145.157
+      database: hyf_article
+      username: root
+      password: Jsu123456.
+      port: 27017
 jwt:
   config:
     key: heyufei

@@ -11,6 +11,7 @@
         <module name="hyf_search" />
         <module name="hyf_sms" />
         <module name="hyf_article" />
+        <module name="wwwwwww" />
         <module name="hyf_Register" />
         <module name="hyf_recruit" />
         <module name="hyf_friend" />
@@ -20,6 +21,7 @@
         <module name="hyf_spit" />
         <module name="hyf_utils" />
         <module name="hyf_question" />
+        <module name="hyf_manager" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -27,6 +29,7 @@
       <module name="hyf_base" target="8" />
       <module name="hyf_friend" target="8" />
       <module name="hyf_gathering" target="1.8" />
+      <module name="hyf_manager" target="8" />
       <module name="hyf_question" target="8" />
       <module name="hyf_recruit" target="1.8" />
       <module name="hyf_Register" target="8" />
@@ -50,6 +53,7 @@
       <module name="tensquare_search" target="8" />
       <module name="tensquare_sms" target="8" />
       <module name="tensquare_spit" target="8" />
+      <module name="wwwwwww" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -59,6 +63,7 @@
       <module name="hyf_base" options="-parameters" />
       <module name="hyf_friend" options="-parameters" />
       <module name="hyf_gathering" options="-parameters" />
+      <module name="hyf_manager" options="-parameters" />
       <module name="hyf_question" options="-parameters" />
       <module name="hyf_recruit" options="-parameters" />
       <module name="hyf_search" options="-parameters" />
@@ -80,6 +85,7 @@
       <module name="tensquare_search" options="-parameters" />
       <module name="tensquare_sms" options="-parameters" />
       <module name="tensquare_spit" options="-parameters" />
+      <module name="wwwwwww" options="" />
     </option>
   </component>
 </project>

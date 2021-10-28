@@ -5,9 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 /**
- * 实体类
- * @author Administrator
- *
+ * 频道
  */
 @Entity
 @Table(name="tb_channel")

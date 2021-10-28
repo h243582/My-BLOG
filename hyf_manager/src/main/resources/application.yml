@@ -1,0 +1,41 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: hyf-manager #指定服务名
+eureka:
+  client:
+    service-url: #指定Eureka客户端与Eureka服务端进行交互的地址
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true
+    
+zuul:
+  routes:
+    hyf-article:
+      path: /article/** #配置请求的URL的请求规则
+      serviceId: hyf-article #指定Eureka注册中心中的服务id
+
+    hyf-friend:
+      path: /friend/**
+      serviceId: hyf-friend
+
+    hyf-base:
+      path: /base/**
+      serviceId: hyf-base
+
+    hyf-question:
+      path: /qa/**
+      serviceId: hyf-qa
+
+    hyf-recruit: #招聘
+      path: /recruit/**
+      serviceId: hyf-recruit
+
+    hyf-spit: #吐槽
+      path: /spit/**
+      serviceId: hyf-spit
+
+    hyf-user:
+      path: /user/**
+      serviceId: hyf-user

@@ -13,7 +13,19 @@ spring:
     name: hyf-spit #指定服务名
   data:
     mongodb:
-      host: 127.0.0.1
-      database: spit
+      #uri: mongodb://120.24.145.157:27017/?compressors=disabled&gssapiServiceName=mongodb
+      host: 120.24.145.157
+      database: hyf_spit
+      username: root
+      password: Jsu123456.
+      port: 27017
+
   redis:
-    host: localhost
+    host: 120.24.145.157
+    password: Jsu123456.
+    port: 6379
+
+jwt:
+  config:
+    key: heyufei
+    ttl: 360000000000

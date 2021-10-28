@@ -5,10 +5,15 @@ import com.heyufei.spit.service.SpitService;
 import entity.PageResult;
 import entity.Result;
 import entity.StatusCode;
+import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
+import util.JwtUtil;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @CrossOrigin
@@ -18,6 +23,10 @@ public class SpitController {
     private SpitService spitService;
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @Autowired
+    private JwtUtil jwtUtil;
+
     /**
      * 查询全部数据
      *
@@ -89,18 +98,24 @@ public class SpitController {
 
     /**
      * 吐槽点赞
-     * @param id
-     * @return
      */
-    @RequestMapping(value = "/thumbup/{id}", method = RequestMethod.PUT)
-    public Result updateThumbup(@PathVariable String id){
+    @RequestMapping(value = "/thumbup/{spitId}", method = RequestMethod.PUT)
+    public Result updateThumbup(@PathVariable String spitId, HttpServletRequest request){
         //判断用户是否点过赞
-        String userid="2023";// 后边我们会修改为当前登陆的用户
-        if(redisTemplate.opsForValue().get("thumbup_"+userid+"_"+id)!=null){
+
+        final String authHeader = request.getHeader("Authorization");
+        final String token = authHeader.substring(8);
+        Claims claims = jwtUtil.parseJWT(token);
+        System.out.println("spitId:"+claims.getId());
+
+        String userid = claims.getId();
+
+        if(redisTemplate.opsForValue().get("thumbup_"+userid+"_"+spitId)!=null){
             return new Result(false,StatusCode.REPERROR,"你已经点过赞了");
         }
-        spitService.updateThumbup(id);
-        redisTemplate.opsForValue().set( "thumbup_"+userid+"_"+ id,"1");
-        return new Result(true,StatusCode.OK,"点赞成功");
+
+        spitService.updateThumbup(spitId);
+        redisTemplate.opsForValue().set( "thumbup_"+userid+"_"+ spitId,"1");
+        return new Result(true,StatusCode.OK,"点赞成功",("userid: "+ userid+ ",  spitId: "+spitId));
     }
 }
