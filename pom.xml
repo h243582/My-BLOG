@@ -37,6 +37,7 @@
         <module>hyf_spit</module>
         <module>hyf_sms</module>
         <module>hyf_manager</module>
+        <module>hyf_web</module>
 
     </modules>
 

@@ -10,6 +10,7 @@
         <module name="hyf_gathering" />
         <module name="hyf_search" />
         <module name="hyf_sms" />
+        <module name="hyf_web" />
         <module name="hyf_article" />
         <module name="wwwwwww" />
         <module name="hyf_Register" />
@@ -38,6 +39,7 @@
       <module name="hyf_spit" target="8" />
       <module name="hyf_user" target="1.8" />
       <module name="hyf_utils" target="8" />
+      <module name="hyf_web" target="8" />
       <module name="ly-cart" target="8" />
       <module name="ly-item" target="8" />
       <module name="ly-items" target="8" />
@@ -71,6 +73,7 @@
       <module name="hyf_spit" options="-parameters" />
       <module name="hyf_user" options="-parameters" />
       <module name="hyf_utils" options="-parameters" />
+      <module name="hyf_web" options="-parameters" />
       <module name="ly-Items" options="-parameters" />
       <module name="ly-cart" options="-parameters" />
       <module name="ly-item" options="-parameters" />

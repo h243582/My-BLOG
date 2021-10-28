@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/hyf_spit/hyf_spit.iml" filepath="$PROJECT_DIR$/hyf_spit/hyf_spit.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_user/hyf_user.iml" filepath="$PROJECT_DIR$/hyf_user/hyf_user.iml" />
       <module fileurl="file://$PROJECT_DIR$/hyf_utils/hyf_utils.iml" filepath="$PROJECT_DIR$/hyf_utils/hyf_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyf_web/hyf_web.iml" filepath="$PROJECT_DIR$/hyf_web/hyf_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled1/ly-Items.iml" filepath="$PROJECT_DIR$/untitled1/ly-Items.iml" />
       <module fileurl="file://$PROJECT_DIR$/wwwwwww/wwwwwww.iml" filepath="$PROJECT_DIR$/wwwwwww/wwwwwww.iml" />
     </modules>
