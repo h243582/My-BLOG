@@ -1,4 +1,4 @@
-package com.heyufei.user;
+package com.heyufei.user.config;
 
 import com.heyufei.user.filter.JwtFilter;
 import org.springframework.beans.factory.annotation.Autowired;

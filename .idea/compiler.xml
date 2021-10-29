@@ -10,10 +10,8 @@
         <module name="hyf_gathering" />
         <module name="hyf_search" />
         <module name="hyf_sms" />
-        <module name="heyufei_config" />
         <module name="hyf_article" />
         <module name="heyufei_web" />
-        <module name="wwwwwww" />
         <module name="hyf_recruit" />
         <module name="hyf_friend" />
         <module name="ly-Items" />
@@ -69,6 +67,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="My_BLOG" options="-parameters" />
       <module name="heyufei_Register" options="-parameters" />
       <module name="heyufei_config" options="-parameters" />
       <module name="heyufei_manager" options="-parameters" />

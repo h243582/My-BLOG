@@ -21,7 +21,7 @@ zuul:
       serviceId: hyf-friend
 
     hyf-base:
-      path: /base/**
+      path: /label/**
       serviceId: hyf-base
 
     hyf-question:

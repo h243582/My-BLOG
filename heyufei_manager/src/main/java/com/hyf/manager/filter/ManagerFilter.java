@@ -44,13 +44,14 @@ public class ManagerFilter extends ZuulFilter {
             return null;
         }
         String authHeader = (String) request.getHeader("Authorization");// 获取头信息
-        if (authHeader != null && authHeader.startsWith("Bearer ")) {
-            String token = authHeader.substring(7);
+        if (authHeader != null && authHeader.startsWith("HeYuFei")) {
+            String token = authHeader.substring(8);
             Claims claims = jwtUtil.parseJWT(token);
             if (claims != null) {
-                if ("admin".equals(claims.get("roles"))) {
-                    requestContext.addZuulRequestHeader("Authorization",
-                            authHeader);
+                String roles = (String) claims.get("roles");
+                System.out.println(roles);
+                if ("admin".equals(roles) || "user".equals(roles)) {
+                    requestContext.addZuulRequestHeader("Authorization", authHeader);
                     System.out.println("token 验证通过，添加了头息" + authHeader);
                     return null;
                 }
@@ -59,8 +60,7 @@ public class ManagerFilter extends ZuulFilter {
         requestContext.setSendZuulResponse(false);// 终止运行
         requestContext.setResponseStatusCode(401);// http状态码
         requestContext.setResponseBody("无权访问");
-        requestContext.getResponse().setContentType(
-                "text/html;charset=UTF-8");
+        requestContext.getResponse().setContentType("text/html;charset=UTF-8");
         return null;
     }
 }

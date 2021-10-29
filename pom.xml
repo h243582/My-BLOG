@@ -39,7 +39,6 @@
         <module>heyufei_Register</module>
         <module>heyufei_manager</module>
         <module>heyufei_web</module>
-        <module>heyufei_config</module>
 
     </modules>
 
