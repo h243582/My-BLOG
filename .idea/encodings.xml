@@ -3,7 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/heyufei_Register/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/heyufei_Register/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heyufei_config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/heyufei_manager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/heyufei_web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyf_article/src/main/java" charset="UTF-8" />
@@ -20,6 +19,5 @@
     <file url="file://$PROJECT_DIR$/hyf_user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyf_user/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyf_utils/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wwwwwww/src/main/java" charset="UTF-8" />
   </component>
 </project>
